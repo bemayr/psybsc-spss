@@ -12,8 +12,11 @@
 1. `Transformieren`
 2. `Variable berechnen`
 3. `Zielvariable` benennen > `Funktion` doppelklicken (z.B. `MEAN` befindet sich in Funktionsgruppe "Statistisch") > `Variablen` mit Doppelklick einfügen und Beistrich (Komma) trennen > *Numerischen Ausdruck* kopieren (für Variablenbeschriftung) > `OK`
+4. Text aus Zwischenablage (*Numerischer Ausdruck*) in `Variablenansicht` in `Beschriftung` einfügen
+5. Skala in `Variablenansicht` markieren > Icon "Tabelle mit µ (mü)" anklicken > `Ausgabefenster`
+6. `Datenansicht` > Wert ablesen
 
-
+### 
 
 
 ## Theorie
