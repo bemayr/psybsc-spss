@@ -16,7 +16,26 @@
 5. Skala in `Variablenansicht` markieren > Icon "Tabelle mit µ (mü)" anklicken > `Ausgabefenster`
 6. `Datenansicht` > Wert ablesen
 
-### 
+### Zusammenhangshypothese
+
+#### 2 Arten
+##### Pearson
+**Voraussetzung**: metrisch & normalverteilt
+##### Spearman
+falls eine der Voraussetzungen bei einer Variable von Pearson nicht zutrifft
+
+### auf *metrisch* überprüfen
+bei `Messniveau` in der `Variablenansicht` schauen, ob das *metrisch* ist
+
+### *Normalverteilung* überprüfen
+1. Kurtosis & Schiefe
+- `Analysieren` > `Deskriptive Statistiken` > `Deskriptive Statistik` > Variablen auswählen > `Optionen` > `Kurtosis` und `Schiefe` anhaken > `Weiter` > `OK`
+- Kurtosis und Schiefe müssen **zwischen** **-2** und **+2** liegen
+2. zentrales Grenzwerttheorem
+- Stichprobe größer als 30, da sich dann alles an die Normalverteilung annähert
+3. grafisch
+- `Grafik` > `Diagrammerstellung` > `Histogramm` > `Normalverteilungskurve anzeigen` + `Anwenden` **!!!** > Variable auf X-Achse ziehen > `OK` > Interpretieren
+4. Kolmogorow-Smirnow & Shapiro-Wilk
 
 
 ## Theorie
