@@ -105,6 +105,9 @@ bei `Messniveau` in der `Variablenansicht` schauen, ob das *metrisch* ist
    - Teststatistik ist *Z* + *Wert* (aus Tabelle ablesen)
 
 
+### Grafiken
+- `Grafik` > `Diagrammerstellung` > passendes Diagramm auswählen
+
 
 ## Theorie
 - Varianzheterogenität
