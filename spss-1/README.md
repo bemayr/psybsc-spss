@@ -51,7 +51,7 @@ bei `Messniveau` in der `Variablenansicht` schauen, ob das *metrisch* ist
     - Signifikanz **unter .05**
 
 
-### Unterschiedshypothese (unabhängige Stichproben)
+### Unterschiedshypothese (unabhängige Stichproben z.B. Männer/Frauen)
 #### Fälle auswählen
 - metrisch überprüfen (TODO: Link)
 - Variable und Ausprägungen notieren
@@ -74,8 +74,36 @@ bei `Messniveau` in der `Variablenansicht` schauen, ob das *metrisch* ist
        - Signifikanz **unter .05**
   - Teststatistik ist *T* + *Wert* (aus Tabelle ablesen)
   
-
 ###### nicht parametrisch (Bedingung verletzt)
+- Mann-Whitney-U-Test
+   - `Analysieren` > `Nicht parametrische Tests` > `alte Dialogfelder` > `2 unabhängige Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
+   - Blick auf Signifikanz des Mann-Whitney-U-Test *Asymptotische Signifikanz (2-seitig)*
+     - H0: es gibt *keinen signifikanten* Unterschied
+       - Signifikanz **gleich oder größer .05**
+     - H1: es gibt *einen signifikanten* Unterschied
+       - Signifikanz **unter .05**
+   - Teststatistik ist *U (Mann-Whitney-U)* + *Wert* (aus Tabelle ablesen)
+
+### Unterschiedshypothese (abhängige Stichproben z.B. vorher/nachher)
+- T-Test
+   - `Analysieren` > `Mittelwerte vergleichen` > `T-Test bei verbundenen Stichproben` > Variablen reinziehen > `OK`
+  - Blick auf Signifikanz des *Tests bei gepaarten Stichproben* *Sig. (2-seitig)*
+     - H0: es gibt *keinen signifikanten* Unterschied
+       - Signifikanz **gleich oder größer .05**
+     - H1: es gibt *einen signifikanten* Unterschied
+       - Signifikanz **unter .05**
+  - Teststatistik ist *T* + *Wert* (aus Tabelle ablesen)
+  
+###### nicht parametrisch (Bedingung verletzt)
+- Wilcoxon
+   - `Analysieren` > `Nicht parametrische Tests` > `alte Dialogfelder` > `2 verbundene Stichproben` > Variablen reinziehen > `OK`
+   - Blick auf Signifikanz von *Statistik für Test* *Asymptotische Signifikanz (2-seitig)*
+     - H0: es gibt *keinen signifikanten* Unterschied
+       - Signifikanz **gleich oder größer .05**
+     - H1: es gibt *einen signifikanten* Unterschied
+       - Signifikanz **unter .05**
+   - Teststatistik ist *Z* + *Wert* (aus Tabelle ablesen)
+
 
 
 ## Theorie
