@@ -43,7 +43,27 @@ bei `Messniveau` in der `Variablenansicht` schauen, ob das *metrisch* ist
      - H1: unterscheiden sich *signifikant* von der Normalverteilung
        - Signifikanz **unter .05**
 
+#### Pearson & Spearman
+- `Analysieren` > `Korrelation` > `Bivariat` > Variablen auswählen > `Korrelationskoeffizient` festlegen: Pearson oder Spearman (immer zweiseitig)
+  - H0: es gibt *keinen signifikanten* Zusammenhang
+    - Signifikanz **gleich oder größer .05**
+  - H1: es gibt *einen signifikanten* Zusammenhang
+    - Signifikanz **unter .05**
 
+
+### Unterschiedshypothese (unabhängige Stichproben)
+#### Fälle auswählen
+- metrisch überprüfen (TODO: Link)
+- Variable und Ausprägungen notieren
+- `Daten` > `Fälle auswählen` > `Falls Bedingung zutrifft` > `Falls` > Variable doppelklicken + `=<Wert>` > `Weiter` > `OK` > in Datenansicht kontrollieren, dass einige der Werte durchgestrichen sind
+- auf Normalverteilung überprüfen (TODO: Link) für alle/beide Ausprägungen durchführen
+
+##### 2 Fälle
+###### parametrisch (metrisch + normalverteilt)
+- T-Test
+   - `Analysieren` > `Mittelwerte vergleichen` > `T-Test bei unabhängigen Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
+
+###### nicht parametrisch (Bedingung verletzt)
 
 
 ## Theorie
