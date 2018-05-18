@@ -58,10 +58,22 @@ bei `Messniveau` in der `Variablenansicht` schauen, ob das *metrisch* ist
 - `Daten` > `Fälle auswählen` > `Falls Bedingung zutrifft` > `Falls` > Variable doppelklicken + `=<Wert>` > `Weiter` > `OK` > in Datenansicht kontrollieren, dass einige der Werte durchgestrichen sind
 - auf Normalverteilung überprüfen (TODO: Link) für alle/beide Ausprägungen durchführen
 
+**WICHTIG**: alle Fälle: `Daten` > `Fälle auswählen` > `Alle Fälle` > `OK`
+
 ##### 2 Fälle
 ###### parametrisch (metrisch + normalverteilt)
 - T-Test
    - `Analysieren` > `Mittelwerte vergleichen` > `T-Test bei unabhängigen Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
+  - Signifikanz beim Levene-Test der Varianzgleichheit
+    - >=.05 nicht signifikant - homogen/gleich 
+    - <.05 signifikant - nicht homogen/nicht gleich
+  - Blick auf Signifikanz des T-Tests *Sig. (2-seitig)*
+     - H0: es gibt *keinen signifikanten* Unterschied
+       - Signifikanz **gleich oder größer .05**
+     - H1: es gibt *einen signifikanten* Unterschied
+       - Signifikanz **unter .05**
+  - Teststatistik ist *T* + *Wert* (aus Tabelle ablesen)
+  
 
 ###### nicht parametrisch (Bedingung verletzt)
 
