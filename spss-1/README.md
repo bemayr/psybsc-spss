@@ -18,16 +18,17 @@
 
 ### Zusammenhangshypothese
 
-#### 2 Arten
-##### Pearson
-**Voraussetzung**: metrisch & normalverteilt
-##### Spearman
-falls eine der Voraussetzungen bei einer Variable von Pearson nicht zutrifft
+#### 2 Arten von Tests
+- Pearson (*parametrisch*)
+   - **Voraussetzung**: metrisch & normalverteilt
+- Spearman (*nicht parametrisch*)
+   - **Voraussetzung**: falls eine der Voraussetzungen bei einer Variable von Pearson nicht zutrifft
 
-### auf *metrisch* überprüfen
-bei `Messniveau` in der `Variablenansicht` schauen, ob das *metrisch* ist
+#### Voraussetzungen überprüfen
+##### *metrisch*?
+für alle Variablen bei `Messniveau` in der `Variablenansicht` schauen, ob *metrisch* eingestellt ist
 
-### *Normalverteilung* überprüfen
+##### *normalverteilt*?
 1. Kurtosis & Schiefe (nicht von der Gruppengröße abhängig)
    - `Analysieren` > `Deskriptive Statistiken` > `Deskriptive Statistik` > Variablen auswählen > `Optionen` > `Kurtosis` und `Schiefe` anhaken > `Weiter` > `OK`
    - Kurtosis und Schiefe müssen **zwischen** **-2** und **+2** liegen (Begründung: nach Andy Field)
@@ -43,7 +44,7 @@ bei `Messniveau` in der `Variablenansicht` schauen, ob das *metrisch* ist
      - H1: unterscheiden sich *signifikant* von der Normalverteilung
        - Signifikanz **unter .05**
 
-#### Pearson & Spearman
+#### Test durchführen (Pearson & Spearman)
 - `Analysieren` > `Korrelation` > `Bivariat` > Variablen auswählen > `Korrelationskoeffizient` festlegen: Pearson oder Spearman (immer zweiseitig)
   - H0: es gibt *keinen signifikanten* Zusammenhang
     - Signifikanz **gleich oder größer .05**
@@ -111,4 +112,4 @@ bei `Messniveau` in der `Variablenansicht` schauen, ob das *metrisch* ist
 
 ## Theorie
 - Varianzheterogenität
-  - ???
+   - TODO
