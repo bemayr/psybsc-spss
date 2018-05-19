@@ -25,7 +25,7 @@
 - Spearman (*nicht parametrisch*)
    - **Voraussetzung**: falls eine der Voraussetzungen bei einer Variable von Pearson nicht zutrifft
 
-#### Voraussetzungen überprüfen
+#### (I) Voraussetzungen überprüfen
 ##### *metrisch*?
 1. für alle Variablen bei `Messniveau` in der `Variablenansicht` schauen, ob *metrisch* eingestellt ist
 
@@ -45,7 +45,7 @@
      - H1: unterscheiden sich *signifikant* von der Normalverteilung
        - Signifikanz **unter .05**
 
-#### Test durchführen (Pearson & Spearman)
+#### (II) Test durchführen (Pearson & Spearman)
 - `Analysieren` > `Korrelation` > `Bivariat` > Variablen auswählen > `Korrelationskoeffizient` festlegen: Pearson oder Spearman (immer zweiseitig)
   - H0: es gibt *keinen signifikanten* Zusammenhang
     - Signifikanz **gleich oder größer .05**
@@ -54,24 +54,23 @@
 
 
 ### Unterschiedshypothese (unabhängige Stichproben z.B. Männer/Frauen)
-
 #### 2 Arten von Tests
 - T-Test (*parametrisch*)
    - **Voraussetzung**: metrisch & normalverteilt
 - Mann-Whitney-U-Test (*nicht parametrisch*)
    - **Voraussetzung**: falls eine der Voraussetzungen bei einer Variable von Pearson nicht zutrifft
 
-#### Fälle auswählen
+#### (I) Voraussetzungen überprüfen und Fälle auswählen
 1. [überprüfen ob die Variablen *metrisch* sind](#metrisch)
 2. Variable und Ausprägungen notieren
 3. `Daten` > `Fälle auswählen` > `Falls Bedingung zutrifft` > `Falls` > Variable doppelklicken + `=<Wert>` > `Weiter` > `OK` > in Datenansicht kontrollieren, dass einige der Werte durchgestrichen sind
 4. [alle/beide Ausprägungen auf *Normalverteilung* überprüfen](#normalverteilt)
 
-#### Fälle zurücksetzen (alle Fälle)
+#### (II) Fälle zurücksetzen (alle Fälle)
 **WICHTIG**: alle Fälle: `Daten` > `Fälle auswählen` > `Alle Fälle` > `OK`
 
-#### Test durchführen
-##### T-Test (parametrisch)
+#### (III) Test durchführen
+##### T-Test (*parametrisch*)
 1. `Analysieren` > `Mittelwerte vergleichen` > `T-Test bei unabhängigen Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
 2. Signifikanz beim Levene-Test der Varianzgleichheit
    - **gleich oder größer .05**: nicht signifikant = homogen/gleich 
@@ -83,7 +82,7 @@
      - Signifikanz **unter .05**
 4. Teststatistik ist *T* + *Wert* (aus Tabelle ablesen)
   
-##### Mann-Whitney-U-Test (nicht parametrisch)
+##### Mann-Whitney-U-Test (*nicht parametrisch*)
 1. `Analysieren` > `Nicht parametrische Tests` > `alte Dialogfelder` > `2 unabhängige Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
 2. Blick auf Signifikanz des Mann-Whitney-U-Test *Asymptotische Signifikanz (2-seitig)*
    - H0: es gibt *keinen signifikanten* Unterschied
@@ -94,24 +93,34 @@
 
 
 ### Unterschiedshypothese (abhängige Stichproben z.B. vorher/nachher)
-- T-Test
-   - `Analysieren` > `Mittelwerte vergleichen` > `T-Test bei verbundenen Stichproben` > Variablen reinziehen > `OK`
-  - Blick auf Signifikanz des *Tests bei gepaarten Stichproben* *Sig. (2-seitig)*
-     - H0: es gibt *keinen signifikanten* Unterschied
-       - Signifikanz **gleich oder größer .05**
-     - H1: es gibt *einen signifikanten* Unterschied
-       - Signifikanz **unter .05**
-  - Teststatistik ist *T* + *Wert* (aus Tabelle ablesen)
+#### 2 Arten von Tests
+- T-Test (*parametrisch*)
+   - **Voraussetzung**: metrisch & normalverteilt
+- Wilcoxon-Test (*nicht parametrisch*)
+   - **Voraussetzung**: falls eine der Voraussetzungen bei einer Variable von Pearson nicht zutrifft
+
+#### (I) Voraussetzungen überprüfen
+1. [überprüfen ob die Variablen *metrisch* sind](#metrisch)
+2. [alle/beide Ausprägungen auf *Normalverteilung* überprüfen](#normalverteilt)
+
+#### (II) Test durchführen
+##### T-Test (*parametrisch*)
+1. `Analysieren` > `Mittelwerte vergleichen` > `T-Test bei verbundenen Stichproben` > Variablen reinziehen > `OK`
+2. Blick auf Signifikanz des *Tests bei gepaarten Stichproben* *Sig. (2-seitig)*
+   - H0: es gibt *keinen signifikanten* Unterschied
+     - Signifikanz **gleich oder größer .05**
+   - H1: es gibt *einen signifikanten* Unterschied
+     - Signifikanz **unter .05**
+3. Teststatistik ist *T* + *Wert* (aus Tabelle ablesen)
   
-###### nicht parametrisch (Bedingung verletzt)
-- Wilcoxon
-   - `Analysieren` > `Nicht parametrische Tests` > `alte Dialogfelder` > `2 verbundene Stichproben` > Variablen reinziehen > `OK`
-   - Blick auf Signifikanz von *Statistik für Test* *Asymptotische Signifikanz (2-seitig)*
-     - H0: es gibt *keinen signifikanten* Unterschied
-       - Signifikanz **gleich oder größer .05**
-     - H1: es gibt *einen signifikanten* Unterschied
-       - Signifikanz **unter .05**
-   - Teststatistik ist *Z* + *Wert* (aus Tabelle ablesen)
+##### Wilcoxon-Test (*nicht parametrisch*)
+1. `Analysieren` > `Nicht parametrische Tests` > `alte Dialogfelder` > `2 verbundene Stichproben` > Variablen reinziehen > `OK`
+2. Blick auf Signifikanz von *Statistik für Test* *Asymptotische Signifikanz (2-seitig)*
+   - H0: es gibt *keinen signifikanten* Unterschied
+     - Signifikanz **gleich oder größer .05**
+   - H1: es gibt *einen signifikanten* Unterschied
+     - Signifikanz **unter .05**
+3. Teststatistik ist *Z* + *Wert* (aus Tabelle ablesen)
 
 
 ### Grafiken
