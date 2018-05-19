@@ -26,7 +26,7 @@
 
 #### Voraussetzungen überprüfen
 ##### *metrisch*?
-für alle Variablen bei `Messniveau` in der `Variablenansicht` schauen, ob *metrisch* eingestellt ist
+1. für alle Variablen bei `Messniveau` in der `Variablenansicht` schauen, ob *metrisch* eingestellt ist
 
 ##### *normalverteilt*?
 1. Kurtosis & Schiefe (nicht von der Gruppengröße abhängig)
@@ -66,8 +66,8 @@ für alle Variablen bei `Messniveau` in der `Variablenansicht` schauen, ob *metr
 - T-Test
    - `Analysieren` > `Mittelwerte vergleichen` > `T-Test bei unabhängigen Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
   - Signifikanz beim Levene-Test der Varianzgleichheit
-    - >=.05 nicht signifikant - homogen/gleich 
-    - <.05 signifikant - nicht homogen/nicht gleich
+    - **gleich oder größer .05**: nicht signifikant = homogen/gleich 
+    - **kleiner .05**: signifikant = nicht homogen/nicht gleich
   - Blick auf Signifikanz des T-Tests *Sig. (2-seitig)*
      - H0: es gibt *keinen signifikanten* Unterschied
        - Signifikanz **gleich oder größer .05**
