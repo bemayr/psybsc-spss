@@ -8,6 +8,7 @@
 4. Wertebereich der Variable ansehen (wsl. 1-5)
 5. `Transformieren` > `Umcodieren in dieselben Variablen` > `Alte und neue Werte` > Werte hinzufügen (1 auf 5; 2 auf 4; usw.) > `Weiter` > `Einfügen` (um Syntax-Fenster zu öffnen, dann **muss** dieser Befehl im Syntax-Fenster noch mit dem grünen Pfeil ausgeführt werden, ansonsten werden die Variablen nicht umkodiert ODER mit `OK` bestätigen und die Syntax aus dem Ausgabefenster kopieren) > *Syntax kopieren*
 
+
 ### Skala bilden
 1. `Transformieren`
 2. `Variable berechnen`
@@ -16,8 +17,8 @@
 5. Skala in `Variablenansicht` markieren > Icon "Tabelle mit µ (mü)" anklicken > `Ausgabefenster`
 6. `Datenansicht` > Wert ablesen
 
-### Zusammenhangshypothese
 
+### Zusammenhangshypothese
 #### 2 Arten von Tests
 - Pearson (*parametrisch*)
    - **Voraussetzung**: metrisch & normalverteilt
@@ -53,37 +54,44 @@
 
 
 ### Unterschiedshypothese (unabhängige Stichproben z.B. Männer/Frauen)
-#### Fälle auswählen
-- metrisch überprüfen (TODO: Link)
-- Variable und Ausprägungen notieren
-- `Daten` > `Fälle auswählen` > `Falls Bedingung zutrifft` > `Falls` > Variable doppelklicken + `=<Wert>` > `Weiter` > `OK` > in Datenansicht kontrollieren, dass einige der Werte durchgestrichen sind
-- auf Normalverteilung überprüfen (TODO: Link) für alle/beide Ausprägungen durchführen
 
+#### 2 Arten von Tests
+- T-Test (*parametrisch*)
+   - **Voraussetzung**: metrisch & normalverteilt
+- Mann-Whitney-U-Test (*nicht parametrisch*)
+   - **Voraussetzung**: falls eine der Voraussetzungen bei einer Variable von Pearson nicht zutrifft
+
+#### Fälle auswählen
+1. [überprüfen ob die Variablen *metrisch* sind](#metrisch)
+2. Variable und Ausprägungen notieren
+3. `Daten` > `Fälle auswählen` > `Falls Bedingung zutrifft` > `Falls` > Variable doppelklicken + `=<Wert>` > `Weiter` > `OK` > in Datenansicht kontrollieren, dass einige der Werte durchgestrichen sind
+4. [alle/beide Ausprägungen auf *Normalverteilung* überprüfen](#normalverteilt)
+
+#### Fälle zurücksetzen (alle Fälle)
 **WICHTIG**: alle Fälle: `Daten` > `Fälle auswählen` > `Alle Fälle` > `OK`
 
-##### 2 Fälle
-###### parametrisch (metrisch + normalverteilt)
-- T-Test
-   - `Analysieren` > `Mittelwerte vergleichen` > `T-Test bei unabhängigen Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
-  - Signifikanz beim Levene-Test der Varianzgleichheit
-    - **gleich oder größer .05**: nicht signifikant = homogen/gleich 
-    - **kleiner .05**: signifikant = nicht homogen/nicht gleich
-  - Blick auf Signifikanz des T-Tests *Sig. (2-seitig)*
-     - H0: es gibt *keinen signifikanten* Unterschied
-       - Signifikanz **gleich oder größer .05**
-     - H1: es gibt *einen signifikanten* Unterschied
-       - Signifikanz **unter .05**
-  - Teststatistik ist *T* + *Wert* (aus Tabelle ablesen)
+#### Test durchführen
+##### T-Test (parametrisch)
+1. `Analysieren` > `Mittelwerte vergleichen` > `T-Test bei unabhängigen Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
+2. Signifikanz beim Levene-Test der Varianzgleichheit
+   - **gleich oder größer .05**: nicht signifikant = homogen/gleich 
+   - **kleiner .05**: signifikant = nicht homogen/nicht gleich
+3. Blick auf Signifikanz des T-Tests *Sig. (2-seitig)*
+   - H0: es gibt *keinen signifikanten* Unterschied
+     - Signifikanz **gleich oder größer .05**
+   - H1: es gibt *einen signifikanten* Unterschied
+     - Signifikanz **unter .05**
+4. Teststatistik ist *T* + *Wert* (aus Tabelle ablesen)
   
-###### nicht parametrisch (Bedingung verletzt)
-- Mann-Whitney-U-Test
-   - `Analysieren` > `Nicht parametrische Tests` > `alte Dialogfelder` > `2 unabhängige Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
-   - Blick auf Signifikanz des Mann-Whitney-U-Test *Asymptotische Signifikanz (2-seitig)*
-     - H0: es gibt *keinen signifikanten* Unterschied
-       - Signifikanz **gleich oder größer .05**
-     - H1: es gibt *einen signifikanten* Unterschied
-       - Signifikanz **unter .05**
-   - Teststatistik ist *U (Mann-Whitney-U)* + *Wert* (aus Tabelle ablesen)
+##### Mann-Whitney-U-Test (nicht parametrisch)
+1. `Analysieren` > `Nicht parametrische Tests` > `alte Dialogfelder` > `2 unabhängige Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
+2. Blick auf Signifikanz des Mann-Whitney-U-Test *Asymptotische Signifikanz (2-seitig)*
+   - H0: es gibt *keinen signifikanten* Unterschied
+     - Signifikanz **gleich oder größer .05**
+   - H1: es gibt *einen signifikanten* Unterschied
+     - Signifikanz **unter .05**
+3. Teststatistik ist *U (Mann-Whitney-U)* + *Wert* (aus Tabelle ablesen)
+
 
 ### Unterschiedshypothese (abhängige Stichproben z.B. vorher/nachher)
 - T-Test
