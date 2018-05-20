@@ -134,7 +134,7 @@
      - **< 5%** (signifikant, \*)
      - **< 1%** (sehr signifikant, \*\*)
      - **< 0,1%** (hoch signifikant, \*\*\*)
-1.	Was bedeutet Normalverteilung und wie kann man diese überprüfen?
+1. Was bedeutet Normalverteilung und wie kann man diese überprüfen?
    - Verteilungsfunktion nach Gauß die besagt, dass ab einer gewissen Stichprobengröße (zentraler Grenwertsatz: 30) zufallsbasierte Daten immer annähernd normalverteilt sind
    - sprich es gibt den Erwartungswert μ und die Standardabweichung σ, die die Daten in form einer Glockenkurve beschreiben
    - Möglichkeiten zu überprüfen ob Daten normalverteilt sind
@@ -142,25 +142,25 @@
      - grafisches Begutachten
      - Kolmogorow-Smirnow (kleine Stichproben)
      - Shapiro-Wilk (mittelgroße Stichproben)
-1.	Was kann man in einem Streudiagramm gut sehen?
+1. Was kann man in einem Streudiagramm gut sehen?
    - Zusammenhänge zwischen den Daten (z.B. linear, quadratisch, kubisch, ...)
-1.	Was kann man in einem Boxplot besonders gut ablesen?
+1. Was kann man in einem Boxplot besonders gut ablesen?
    - Ein Box-Plot soll schnell einen Eindruck darüber vermitteln, in welchem Bereich die Daten liegen und wie sie sich über diesen Bereich verteilen.
    - Fünf-Punkte-Zusammenfassung: Median, zwei Quartile und die beiden Extremwerte 
-1.	Was bedeutet Varianzhomogenität?
-  - = *Homoskedastizität*
-  - die Werte in den einzelnen Gruppen weisen die gleiche Varianz auf
-  - wird vom *t*-Test für unabhängige Gruppen vorausgesetzt
-  - wird mit Levene-Test überprüft
-1.	Was bedeutet Varianzheterogenität?
-  - = *Heteroskedastizität*
-  - die Werte in den einzelnen Gruppen weisen unterschiedliche Varianzen auf
-  - wird mit Levene-Test überprüft
-1.	Was ist ein Outliner und welchen Einfluss haben Outliner auf Daten?
+1. Was bedeutet Varianzhomogenität?
+   - = *Homoskedastizität*
+   - die Werte in den einzelnen Gruppen weisen die gleiche Varianz auf
+   - wird vom *t*-Test für unabhängige Gruppen vorausgesetzt
+   - wird mit Levene-Test überprüft
+1. Was bedeutet Varianzheterogenität?
+   - = *Heteroskedastizität*
+   - die Werte in den einzelnen Gruppen weisen unterschiedliche Varianzen auf
+   - wird mit Levene-Test überprüft
+1. Was ist ein Outliner und welchen Einfluss haben Outliner auf Daten?
    - Wert der sehr stark vom Erwartungswert abweicht (zu Deutsch *Ausreißer* genannt)
    - sie verzerren z.B. das arithmetische Mittel sehr stark
    - prüfen ob es sich um Messfehler handelt
-1.	Welche Maße der zentralen Tendenz gibt es und was bedeuten diese?
+1. Welche Maße der zentralen Tendenz gibt es und was bedeuten diese?
    - **Mittelwert**: arithmetisches Mittel (Summe/Anzahl; wird von Ausreißern stark beeinflusst)
    - **Median**: Zentralwert, Wert der in der Mitte einer sortierten Reihe liegt (unsensibel gegenüber Ausreißern)
    - **Modus**: häufigster Wert
