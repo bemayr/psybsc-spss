@@ -55,7 +55,7 @@
 
 ### Unterschiedshypothese (unabhängige Stichproben z.B. Männer/Frauen)
 #### 2 Arten von Tests
-- T-Test (*parametrisch*)
+- *t*-Test (*parametrisch*)
    - **Voraussetzung**: metrisch & normalverteilt
 - Mann-Whitney-U-Test (*nicht parametrisch*)
    - **Voraussetzung**: falls eine der Voraussetzungen bei einer Variable von Pearson nicht zutrifft
@@ -70,12 +70,12 @@
 **WICHTIG**: alle Fälle: `Daten` > `Fälle auswählen` > `Alle Fälle` > `OK`
 
 #### (III) Test durchführen
-##### T-Test (*parametrisch*)
+##### *t*-Test (*parametrisch*)
 1. `Analysieren` > `Mittelwerte vergleichen` > `T-Test bei unabhängigen Stichproben` > `Testvariable` in Feld *Testvariable(n)* ziehen > `Gruppierungsvariable` (z.B. Geschlecht) in *Gruppierungsvariable* ziehen > `Gruppen definieren` > Werte eintragen > `Weiter` > `OK`
 1. Signifikanz beim Levene-Test der Varianzgleichheit
    - **gleich oder größer .05**: nicht signifikant = homogen/gleich 
    - **kleiner .05**: signifikant = nicht homogen/nicht gleich
-1. Blick auf Signifikanz des T-Tests *Sig. (2-seitig)*
+1. Blick auf Signifikanz des *t*-Tests *Sig. (2-seitig)*
    - H0: es gibt *keinen signifikanten* Unterschied
      - Signifikanz **gleich oder größer .05**
    - H1: es gibt *einen signifikanten* Unterschied
@@ -128,11 +128,39 @@
 
 
 ## Theorie
-1. Was bedeutet Signifikant und welche Signifikanzniveaus gelten in der Psychologie als Grenzwerte?
+1. Was bedeutet Signifikant und welche Signifikanzniveaus gelten in der Psychologie als Grenzwerte? [1](https://www.spektrum.de/lexikon/psychologie/signifikanzniveau/14251)
+   - Niveau des Alpha-Fehlers (Fehler erster Art), d.h. des Fehlers, eine Nullhypothese abzulehnen, obwohl sie richtig ist
+   - per Konvention festgelegte Höchstgrenzen
+     - **< 5%** (signifikant, \*)
+     - **< 1%** (sehr signifikant, \*\*)
+     - **< 0,1%** (hoch signifikant, \*\*\*)
 1.	Was bedeutet Normalverteilung und wie kann man diese überprüfen?
+   - Verteilungsfunktion nach Gauß die besagt, dass ab einer gewissen Stichprobengröße (zentraler Grenwertsatz: 30) zufallsbasierte Daten immer annähernd normalverteilt sind
+   - sprich es gibt den Erwartungswert μ und die Standardabweichung σ, die die Daten in form einer Glockenkurve beschreiben
+   - Möglichkeiten zu überprüfen ob Daten normalverteilt sind
+     - Kurtosis & Schiefe
+     - grafisches Begutachten
+     - Kolmogorow-Smirnow (kleine Stichproben)
+     - Shapiro-Wilk (mittelgroße Stichproben)
 1.	Was kann man in einem Streudiagramm gut sehen?
+   - Zusammenhänge zwischen den Daten (z.B. linear, quadratisch, kubisch, ...)
 1.	Was kann man in einem Boxplot besonders gut ablesen?
+   - Ein Box-Plot soll schnell einen Eindruck darüber vermitteln, in welchem Bereich die Daten liegen und wie sie sich über diesen Bereich verteilen.
+   - Fünf-Punkte-Zusammenfassung: Median, zwei Quartile und die beiden Extremwerte 
 1.	Was bedeutet Varianzhomogenität?
+  - = *Homoskedastizität*
+  - die Werte in den einzelnen Gruppen weisen die gleiche Varianz auf
+  - wird vom *t*-Test für unabhängige Gruppen vorausgesetzt
+  - wird mit Levene-Test überprüft
 1.	Was bedeutet Varianzheterogenität?
+  - = *Heteroskedastizität*
+  - die Werte in den einzelnen Gruppen weisen unterschiedliche Varianzen auf
+  - wird mit Levene-Test überprüft
 1.	Was ist ein Outliner und welchen Einfluss haben Outliner auf Daten?
+   - Wert der sehr stark vom Erwartungswert abweicht (zu Deutsch *Ausreißer* genannt)
+   - sie verzerren z.B. das arithmetische Mittel sehr stark
+   - prüfen ob es sich um Messfehler handelt
 1.	Welche Maße der zentralen Tendenz gibt es und was bedeuten diese?
+   - **Mittelwert**: arithmetisches Mittel (Summe/Anzahl; wird von Ausreißern stark beeinflusst)
+   - **Median**: Zentralwert, Wert der in der Mitte einer sortierten Reihe liegt (unsensibel gegenüber Ausreißern)
+   - **Modus**: häufigster Wert
