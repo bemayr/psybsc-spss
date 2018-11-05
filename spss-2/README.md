@@ -44,3 +44,4 @@ umkodieren
   - Mann: D(82) = ,081; p = ,200
 - Levene
   - F(1, 253) = 3,582; p = ,060 (,05 is die Grenze für Signifikanz)
+- Ergebnis: t(df)=T; p=Sig
