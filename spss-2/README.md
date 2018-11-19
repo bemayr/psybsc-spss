@@ -45,3 +45,91 @@ umkodieren
 - Levene
   - F(1, 253) = 3,582; p = ,060 (,05 is die Grenze für Signifikanz)
 - Ergebnis: t(df)=T; p=Sig
+
+
+# 2. Übungsblatt
+
+## Aufgabe 1
+*nicht Prüfungsstoff*: Unterschiedshypothese, dann T-Test oder Welch-Test machen
+F(<Gruppenanzahl> - 1, <n> - 2)
+
+## Aufgabe 2
+*ähnlich zu Aufgabe 1, aber es können Ausreißer auftreten und unsere Statistik verzerren*: daher kein T-Test oder Welch-Test, sondern **U-Test**, oder **Mann-Whitney-Test** (runterbrechen auf Ordinalskalenniveau, Rangtransformation)
+
+Gruppierungsvariable: Neurotizismus_dichotom (+ Gruppen definieren)
+Testvariablen: Zugehörigkeit
+
+Deskriptive Statistik ist beim U-Test der mittlere Rang pro Gruppe
+gering neurotizistisch: 95,12
+hoch neurotizistisch: 74,51
+
+Inferenzstatistischer Test: U-Test: 2698,5; p = ,006
+
+## Aufgabe 3
+Post-hoc: siehe handy
+Optionen: Deskriptive Statistik + Test auf Homogänität der Varianzen + Welch
+
+Faktor: Charaktertyp
+Abhängige Variablen: TS_Sinnerfülltheit
+
+Deskriptive Statistik: Mittelwerte und Standardabweichung der einzelnen Gruppen
+Sanguiniker: 4,4080   1,05053
+Phlegmatiker: 3,5389   1,02296
+Choleriker: 3,5846   ,76926
+Melancholiker: 3,0351   ,74174
+
+F(<df1>,<df2>)=<Levene-Statistik>; p=<Signifikanz> **=>** F(3,165)=2,042; p=,110
+Man kann die Voraussetzung als gegeben annehmen, dass die Varianzen in den Gruppen homogen sind, da der Levene-Test nicht signifikant ist. (p > ,05), also wird obere Box berichtet, sonst untere Box.
+F(3,165) = 20,493; p = ,000 (oder p < ,001)
+                                           
+Wenn Levene-Test nicht signifikant (also Varianzhomogenität gegeben), dann nehmen wir GT2 (Hochberg), dann p berichten
+Sanguiniker|Phlegmatiker: ,000
+Sanguiniker|Choleriker: ,001
+Sanguiniker|Melancholiker: ,000
+Phlegmatiker|Choleriker: 1,000
+Phlegmatiker|Melancholiker: ,059
+Choleriker|Melancholiker: ,067
+
+> Bei der Prüfung geht es nur darum, dass ihr die Zahlen richtig abschreiben könnt. - Daniel Purtscheller, 19.11.2018
+
+## Aufgabe 4
+*ähnlich zu Aufgabe 3, aber Rangtransformation*:
+
+Einstellungen, Tests anpassen, Einfaktorielle ANOVA nack Kruskal-Wallis
+Gruppen: Charaktertyp, Testvariable: Bedeutsamkeit
+
+Ansicht: Paarweise Vergleiche von Charaktertyp
+Deskriptive Statistik (aus Grafik ablesen), mittlere Ränge:
+Sanguiniker: 117,83
+Phlegmatiker: 88,24
+Choleriker: 74,62
+Melancholiker: 58,89
+
+Inferenzstatistischer Test:
+H(3,169) = 40,341; p = ,000
+
+Überschreitungswahrscheinlichkeiten
+Melancholiker|Choleriker: 1,000
+Melancholiker|Phlegmatiker: ,028
+Melancholiker|Sanguiniker: ,000
+Choleriker|Phlegmatiker: 1,000
+Choleriker|Sanguiniker: ,001
+Phlegmatiker|Sanguiniker: ,033
+
+## Aufgabe 5
+gleich wie 3, nur da Signifikanz vom Levene-Test < ,05 ist, Welch-Test (also untere Box) nehmen
+
+"Das ist einfach ein mathematischer Firlefanz, und das ist einfach eine Korrektur" - Daniel Purtscheller, 19.11.2018
+
+dann auch die untere Hälfte (Games-Howell) interpretieren
+
+## Aufgabe 6
+Deskriptive Statistiken
+Vier Ausprägungen: Mittelwert + Standardabweichung aufschreiben
+
+"Hier wo das Sternchen für Multiplizieren ist, das ist der Interaktionseffekt."
+F(1,165) = 4,216; p = ,042
+165 aus Fehler ablesen
+
+## Aufgabe 7
+F(1,165) = ,003; p = ,960
