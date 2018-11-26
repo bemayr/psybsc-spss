@@ -54,6 +54,8 @@ umkodieren
 F(<Gruppenanzahl> - 1, <n> - 2)
 
 ## Aufgabe 2
+> Analysieren -> nicht parametrische Tests -> klassische Dialogfelder -> 2 unabhängige Stickproben
+
 *ähnlich zu Aufgabe 1, aber es können Ausreißer auftreten und unsere Statistik verzerren*: daher kein T-Test oder Welch-Test, sondern **U-Test**, oder **Mann-Whitney-Test** (runterbrechen auf Ordinalskalenniveau, Rangtransformation)
 
 Gruppierungsvariable: Neurotizismus_dichotom (+ Gruppen definieren)
@@ -66,13 +68,14 @@ hoch neurotizistisch: 74,51
 Inferenzstatistischer Test: U-Test: 2698,5; p = ,006
 
 ## Aufgabe 3
-Post-hoc: siehe handy
-Optionen: Deskriptive Statistik + Test auf Homogänität der Varianzen + Welch
+> Analysieren -> Mittelwerte vergleichen -> Einfaktorielle Varianzanalyse
+> *Post-Hoc:* GT2 nach Hochberg + Games-Howell
+> *Optionen:* Deskriptive Statistik + Test auf Homogenität der Varianzen + Welch
 
-Faktor: Charaktertyp
-Abhängige Variablen: TS_Sinnerfülltheit
+*Faktor:* Charaktertyp
+*Abhängige Variablen:* TS_Sinnerfülltheit
 
-Deskriptive Statistik: Mittelwerte und Standardabweichung der einzelnen Gruppen
+**Deskriptive Statistik:** *Mittelwerte* und *Standardabweichung* der einzelnen Gruppen
 Sanguiniker: 4,4080   1,05053
 Phlegmatiker: 3,5389   1,02296
 Choleriker: 3,5846   ,76926
@@ -93,10 +96,13 @@ Choleriker|Melancholiker: ,067
 > Bei der Prüfung geht es nur darum, dass ihr die Zahlen richtig abschreiben könnt. - Daniel Purtscheller, 19.11.2018
 
 ## Aufgabe 4
+> Analysieren -> nicht parametrische Tests -> unabhängige Stichproben
+> *Einstellungen:* Tests anpassen -> Einfaktorielle ANOVA nack Kruskal-Wallis + Mehrfahvergleiche "alle paarweise"
+> *Ausgabefenster:* Hypothesentestübersicht
+
 *ähnlich zu Aufgabe 3, aber Rangtransformation*:
 
-Einstellungen, Tests anpassen, Einfaktorielle ANOVA nack Kruskal-Wallis
-Gruppen: Charaktertyp, Testvariable: Bedeutsamkeit
+*Gruppierungsvariable:* Charaktertyp, *Testvariable:* Bedeutsamkeit
 
 Ansicht: Paarweise Vergleiche von Charaktertyp
 Deskriptive Statistik (aus Grafik ablesen), mittlere Ränge:
@@ -106,7 +112,7 @@ Choleriker: 74,62
 Melancholiker: 58,89
 
 Inferenzstatistischer Test:
-H(3,169) = 40,341; p = ,000
+H(3,169) = 40,341; p = ,000 (asymptotische Signifikanz, 2-seitiger Test)
 
 Überschreitungswahrscheinlichkeiten
 Melancholiker|Choleriker: 1,000
@@ -124,6 +130,9 @@ gleich wie 3, nur da Signifikanz vom Levene-Test < ,05 ist, Welch-Test (also unt
 dann auch die untere Hälfte (Games-Howell) interpretieren
 
 ## Aufgabe 6
+> Analysieren -> Allgemeines lineares Modell -> Univariat
+> *Optionen:* Deskriptive Statistik
+
 Deskriptive Statistiken
 Vier Ausprägungen: Mittelwert + Standardabweichung aufschreiben
 
