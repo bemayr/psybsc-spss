@@ -142,3 +142,28 @@ F(1,165) = 4,216; p = ,042
 
 ## Aufgabe 7
 F(1,165) = ,003; p = ,960
+
+
+# 3. Übungsblatt
+## Aufgabe 1
+*nur Abschlussprüfung*
+> Analysieren -> Faktorenanalyse (1.: Univariat, KMO-Bartlett; 2.: Hauptachsen-Faktorenanlyse, Screeplot; 3. Varimax; 5. Sortiert nach Größe, Kleine Koeffizienten unterdrücken, Absolutwert unter .5)
+> Chi^2(<df>) = <Ungefähres Chi-Quadrat>; p = <Signifikanz nach Bartlett>
+
+
+## Aufgabe 3
+> Analysieren -> Korrelation -> Bivariat -> Pearson ist standardmäßig aktiviert
+> r = <Zelle rechts oben>, p = <Zelle darunter>
+  
+## Aufgabe 4
+> Analysieren -> Regression -> Linear
+> R = <R>; R^2 = <R-Quadrat>
+> F(<df.Regression>, <df.Nicht standardisierte Residuen>) = <F>; p = <Signifikanz>
+
+## Aufgabe 5
+> Analysieren -> Regression -> Linear -> Statistiken (Teil- und partielle Korrelationen)
+> ...
+
+## Aufgabe 6
+> Analysieren -> Regression -> Linear -> Nächste
+> Rquadrat inkrementiell
